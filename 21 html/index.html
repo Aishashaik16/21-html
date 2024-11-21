@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./response.html" method="get">
+        <!--pattern attribute
+        com in gov co org 
+        gmail, yahoo, reddif, outlook
+        for min and max length of characters
+        "[a-z]{3,10}"
+        *any character with range= ".{3,10}"-->
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" required pattern="[abc]" title="please select a or b or c"><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" required pattern="[a-zA-Z0-9]" title="please select anyone"><br>
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" required pattern="[\da-z]+@[a-z]+\.[a-z]+" title="please use @ and gmail and com"><br>
+        <input type="submit" value="save changes">
+    </form>
+</body>
+</html>
